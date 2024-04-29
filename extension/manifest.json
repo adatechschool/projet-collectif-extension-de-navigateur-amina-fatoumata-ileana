@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Post Note",
+    "version": "1.0.0",
+    "description": "Prise de notes sur post-it directement sur page web.",
+    "icons": {
+        "48": "images/post.png",
+        "128": "images/post.png"
+      }
+    
+  }
