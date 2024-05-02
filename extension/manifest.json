@@ -1,11 +1,18 @@
 {
     "manifest_version": 3,
-    "name": "Post Note",
-    "version": "1.0.0",
+    "name": "Stick Notes",
     "description": "Prise de notes sur post-it directement sur page web.",
+    "version": "1.0.0",
     "icons": {
-        "48": "images/post.png",
-        "128": "images/post.png"
-      }
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+      },
+    "action": {
+        "default_title": "Click Me",  
+        "default_popup": "index.html"  
+    }
+        
+    
+  
     
   }
