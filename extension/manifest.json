@@ -1,18 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Stick Notes",
-    "description": "Prise de notes sur post-it directement sur page web.",
-    "version": "1.0.0",
-    "icons": {
-        "48": "images/logo.png",
-        "128": "images/logo.png"
-      },
-    "action": {
-        "default_title": "Click Me",  
-        "default_popup": "index.html"  
+  "manifest_version": 3,
+  "name": "Stick Notes",
+  "description": "Prise de notes sur post-it directement sur page web.",
+  "version": "1.0.0",
+  "icons": {
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "index.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["style.css"]
     }
-        
-    
-  
-    
+  ],
+
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["script.js"]
   }
+}
