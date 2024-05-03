@@ -1,6 +1,5 @@
 const memoryOfNotes = { stickyCount: 0 };
 const yellow = document.querySelector("#btn-yellow");
-console.log(yellow);
 const green = document.querySelector("#btn-green");
 const pink = document.querySelector("#btn-pink");
 const blue = document.querySelector("#btn-blue");
