@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Stick Notes",
+  "name": "Stick Notes Test",
   "description": "Prise de notes sur post-it directement sur page web.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "48": "images/logo.png",
     "128": "images/logo.png"
@@ -15,13 +15,12 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["script.js"],
+      "js": ["script.js", "content.js"],
       "css": ["style.css"]
     }
   ],
 
-  "permissions": ["storage"],
-  "background": {
-    "scripts": ["script.js"]
-  }
+  "permissions": ["activeTab"]
+  
+
 }
