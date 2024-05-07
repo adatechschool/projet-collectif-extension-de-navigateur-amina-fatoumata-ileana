@@ -44,7 +44,7 @@ img {
   justify-content: space-around;
 }
 
-#btn-blue {
+.btn-blue {
   border-radius: 50%;
   border-width: 0.1em;
   background-color: rgb(139, 222, 229);
@@ -52,15 +52,15 @@ img {
   color: grey;
 }
 
-#btn-green {
+.btn-green {
   border-radius: 50%;
   background-color: greenyellow;
-  border-color: rgb(177, 215, 120);
+  border-color: #b1d778;
   border-width: 0.1em;
   color: grey;
 }
 
-#btn-yellow {
+.btn-yellow {
   border-radius: 50%;
   background-color: #fae472;
   border-color: #bcb281;
@@ -68,7 +68,7 @@ img {
   color: grey;
 }
 
-#btn-pink {
+.btn-pink {
   border-radius: 50%;
   background-color: #eca2c4;
   border-color: #b37a95;

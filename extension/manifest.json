@@ -9,19 +9,27 @@
   },
   "action": {
     "default_title": "Click Me",
-    "default_popup": "index.html"
+    "default_popup": "popup/popup.html"
   },
 
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["script.js"],
-      "css": ["style.css"]
+      "matches": ["*://*/*"],
+      "js": ["popup/popup.js"],
+      "css": ["popup/popup.css"]
     }
   ],
+  "host_permissions": ["https://www.google.com/", "https://*/*", "http://*/*"],
 
-  "permissions": ["storage"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "webNavigation",
+    "contentSettings",
+    "tabs"
+  ],
   "background": {
-    "scripts": ["script.js"]
+    "service_worker": "background.js"
   }
 }
